@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'EsriMaps';
+  public title: string = 'EsriMaps';
+  public featureLayer: string = `${environment.serverUrl}SampleWorldCities/MapServer/0`
 }
